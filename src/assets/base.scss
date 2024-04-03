@@ -27,3 +27,34 @@ $base-shadow-2: #6363631a 0px 0px 4px 0px;
 $base-shadow-3: #00000026 0px 2px 8px;
 $base-cubic-bezier: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 $base-button-transition: all 1s linear;
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+        border: 1px solid $base-dark-grey;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background-color: $base-dark-grey;
+            color: $base-white;
+        }
+    }
+}

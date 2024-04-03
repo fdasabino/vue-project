@@ -1,4 +1,7 @@
+//- router file for vue-router
 import { createRouter, createWebHistory } from "vue-router";
+
+//- views
 import HomeView from "../views/HomeView.vue";
 
 const router = createRouter({
